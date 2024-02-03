@@ -6,14 +6,13 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr auto;
     grid-auto-rows: 100px 400px 100px 100px;
     grid-template-areas:
         "grid-par nav-info nav-info nav-info "
         "grid-par image aboutme aboutme"
         "grid-par icon star star2"
-        ". . AnasJamale ."
-
+        "Anas Anas Anas Anas"
     ;
     gap: 10px 10px;
     justify-items: start;
@@ -235,7 +234,6 @@
 
 .four-pointed-star {
     margin: 1em auto;
-    width: 10%;
     font-size: 1em;
     grid-area: star;
     grid-column: 3/3;
@@ -270,7 +268,6 @@
 
 .four-pointed-star2 {
     margin: 1em auto;
-    width: 10%;
     font-size: 1em;
     grid-area: star2;
     grid-column: 4/4;
@@ -438,20 +435,18 @@
 
 .attribution {
     color: brown;
-    position: absolute;
+    grid-area: Anas;
+    justify-self: center;
+    align-self: center;
     text-decoration: none;
-    left: 50%;
     overflow: hidden;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    text-align: center;
     transition: all .3s;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     -o-transition: all .3s;
+
 }
 
 .attribution a {
@@ -471,7 +466,7 @@
 @media screen and (max-width:992px) {
     .container {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         grid-auto-rows: 100px 540px 50px 200px 300px 200px 300px 100px 50px;
         grid-template-areas:
             "nav-info"
@@ -481,7 +476,7 @@
             "star"
             "star2"
             "icon"
-            "AnasJamal"
+
 
         ;
         justify-items: center;
@@ -631,15 +626,23 @@
 
 
     .attribution {
-        display: grid;
         text-align: center;
-        width: 20%;
-        height: 10%;
+        grid-area: star;
+        grid-row: 8/9;
+        justify-self: center;
+        align-self: end;
+        z-index: 1;
+
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
+
+    }
+
+    .four-pointed-star::before {
+        display: none;
     }
 
     .attribution a {
