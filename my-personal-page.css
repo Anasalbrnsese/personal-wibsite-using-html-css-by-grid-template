@@ -6,7 +6,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr auto;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
     grid-auto-rows: 100px 400px 100px 100px;
     grid-template-areas:
         "grid-par nav-info nav-info nav-info "
@@ -18,8 +18,6 @@
     justify-items: start;
     justify-content: start;
     align-items: center;
-
-
 }
 
 .grid {
@@ -44,7 +42,6 @@
     font-family: 'Courier New', Courier, monospace;
     opacity: 1.1;
     width: 6px;
-
 }
 
 .grid div:hover {
@@ -131,22 +128,14 @@
 .image img {
     width: 100%;
     object-fit: cover;
-
     transition: all .4s;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     -ms-transition: all .4s;
     -o-transition: all .4s;
-
 }
 
-
-
-
-
-
 .img:hover {
-
     transform: scale(1.3) rotate(24deg);
     -webkit-transform: scale(1.3) rotate(24deg);
     -moz-transform: scale(1.3) rotate(24deg);
@@ -168,7 +157,6 @@
 
 .aboutme:hover {
     opacity: 1;
-
 }
 
 .aboutme::before {
@@ -186,7 +174,6 @@
 
 .aboutme:hover::before {
     opacity: 1;
-
 }
 
 .nav-info ul {
@@ -202,7 +189,6 @@
 .nav-info {
     grid-area: nav-info;
     align-items: start;
-
 }
 
 .nav-info ul li:hover {
@@ -228,8 +214,6 @@
     box-shadow: 1 3 3 4 5#7d39d0;
     box-shadow: 2px 3px 3px 3px red;
     cursor: help;
-
-
 }
 
 .four-pointed-star {
@@ -266,6 +250,39 @@
     -o-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
 }
 
+@keyframes spiner2 {
+    from {
+        transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+        -webkit-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+        -moz-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+        -ms-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+        -o-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+    }
+
+    to {
+        transform: rotate(596deg) skewX(264.5deg) skewY(29.5deg);
+        -webkit-transform: rotate(596deg) skewX(264.5deg) skewY(29.5deg);
+        -moz-transform: rotate(596deg) skewX(264.5deg) skewY(29.5deg);
+        -ms-transform: rotate(596deg) skewX(264.5deg) skewY(29.5deg);
+        -o-transform: rotate(596deg) skewX(264.5deg) skewY(29.5deg);
+    }
+
+}
+
+.four-pointed-star::after {
+    animation-name: spiner2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+
+.four-pointed-star2::after {
+    animation-name: spiner2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+
 .four-pointed-star2 {
     margin: 1em auto;
     font-size: 1em;
@@ -296,14 +313,80 @@
     transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
 }
 
+@keyframes spiner {
+    from {
+        transform: rotate(0deg) skewY(50deg);
+        -webkit-transform: rotate(0deg) skewY(50deg);
+        -moz-transform: rotate(0deg) skewY(50deg);
+        -ms-transform: rotate(0deg) skewY(50deg);
+        -o-transform: rotate(0deg) skewY(50deg);
+    }
+
+    to {
+        transform: rotate(360deg) skewY(50deg);
+        -webkit-transform: rotate(360deg) skewY(50deg);
+        -moz-transform: rotate(360deg) skewY(50deg);
+        -ms-transform: rotate(360deg) skewY(50deg);
+        -o-transform: rotate(360deg) skewY(50deg);
+    }
+
+}
+
 .four-pointed-star3 {
-    margin: 1em auto;
     width: 10%;
     font-size: 1em;
     grid-area: aboutme;
-    grid-column: 3/3;
+    grid-column: 4/4;
+}
 
+.four-pointed-star3::after {
+    animation-name: spiner;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
 
+.four-pointed-star3::before {
+    animation-name: spiner;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: -3.5s;
+}
+
+.four-pointed-star4::after {
+    animation-name: spiner;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.four-pointed-star4::before {
+    animation-name: spiner;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: -3.5s;
 }
 
 .four-pointed-star3:before {
@@ -322,19 +405,14 @@
     width: 1em;
     height: 1.15em;
     transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
-
 }
 
 .four-pointed-star4 {
-    margin: 1em auto;
     width: 10%;
     font-size: 1em;
     grid-area: aboutme;
-    grid-column: 4/4;
-
-
-    margin-right: 55px;
-
+    grid-column: 3/4;
+    justify-self: center;
 }
 
 .four-pointed-star4:before {
@@ -378,7 +456,6 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-
 }
 
 .icon-instagram ion-icon:hover {
@@ -389,7 +466,6 @@
     grid-area: icon;
     justify-self: center;
 }
-
 
 .icon-facebook ion-icon {
     width: 50px;
@@ -404,7 +480,6 @@
     -o-border-radius: 20px;
 }
 
-
 .icon-facebook ion-icon:hover {
     box-shadow: 0px 0px 5px 4px rgb(156, 0, 0);
 }
@@ -413,7 +488,6 @@
     grid-area: icon;
     justify-self: end;
 }
-
 
 .icon-github ion-icon {
     width: 50px;
@@ -432,7 +506,6 @@
     box-shadow: 0px 0px 5px 4px rgb(156, 0, 0);
 }
 
-
 .attribution {
     color: brown;
     grid-area: Anas;
@@ -446,7 +519,6 @@
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     -o-transition: all .3s;
-
 }
 
 .attribution a {
@@ -462,7 +534,6 @@
     -o-border-radius: 10px;
 }
 
-
 @media screen and (max-width:992px) {
     .container {
         display: grid;
@@ -476,16 +547,9 @@
             "star"
             "star2"
             "icon"
-
-
         ;
         justify-items: center;
         align-items: start;
-
-
-
-
-
     }
 
     .nav-info ul li {
@@ -493,10 +557,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-
-
-
     }
 
     .nav-info ul {
@@ -516,8 +576,6 @@
         justify-content: center;
         align-items: center;
         align-self: center;
-
-
     }
 
     .image {
@@ -528,7 +586,6 @@
     .aboutme {
         grid-area: aboutme;
         grid-row: 3/4;
-
     }
 
     .grid {
@@ -537,17 +594,14 @@
         display: grid;
         grid-template-columns: auto;
         width: 70%;
-
     }
 
     .grid:hover {
         width: 80%;
-
     }
 
     .grid div:hover {
         box-shadow: 0px 7px 20px 20px rgb(62 48 83);
-
     }
 
     .grid div {
@@ -567,7 +621,6 @@
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-
     }
 
     .grid div::before {
@@ -605,23 +658,24 @@
     .four-pointed-star3 {
         grid-area: aboutme;
         grid-row: 3/4;
-
-
-
+        justify-self: center;
+        align-self: center;
     }
 
     .four-pointed-star4 {
         grid-area: aboutme;
         grid-row: 3/4;
-
-
-
+        justify-self: end;
+        align-self: center;
     }
 
     .four-pointed-star2 {
         grid-area: star2;
         grid-row: 7/8;
+    }
 
+    .four-pointed-star::after {
+        animation-name: none;
     }
 
 
@@ -632,13 +686,11 @@
         justify-self: center;
         align-self: end;
         z-index: 1;
-
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-
     }
 
     .four-pointed-star::before {
@@ -649,6 +701,21 @@
         text-decoration: none;
     }
 
+    @keyframes spiner2 {
+        from {
+            transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+            -webkit-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+            -moz-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+            -ms-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+            -o-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
+        }
 
-
+        to {
+            transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
+            -webkit-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
+            -moz-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
+            -ms-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
+            -o-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
+        }
+    }
 }
