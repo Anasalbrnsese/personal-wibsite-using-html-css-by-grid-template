@@ -708,22 +708,4 @@
     .attribution a {
         text-decoration: none;
     }
-
-    @keyframes spiner2 {
-        from {
-            transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
-            -webkit-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
-            -moz-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
-            -ms-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
-            -o-transform: rotate(236deg) skewX(264.5deg) skewY(29.5deg);
-        }
-
-        to {
-            transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
-            -webkit-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
-            -moz-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
-            -ms-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
-            -o-transform: rotate(236deg) skewX(624.5deg) skewY(389.5deg);
-        }
-    }
 }
