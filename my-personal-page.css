@@ -396,6 +396,10 @@
     width: 1em;
     height: 1.15em;
     transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+    -webkit-transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+    -moz-transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+    -ms-transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+    -o-transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
 }
 
 .four-pointed-star3:after {
@@ -405,6 +409,10 @@
     width: 1em;
     height: 1.15em;
     transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+    -webkit-transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+    -moz-transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+    -ms-transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+    -o-transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
 }
 
 .four-pointed-star4 {
