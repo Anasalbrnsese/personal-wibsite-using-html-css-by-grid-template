@@ -41,7 +41,7 @@
 }
 
 .grid:hover {
-    box-shadow: 0px 7px 20px 20px rgb(62 48 83);
+    box-shadow: -1px 1px 40px 40px inset rgb(62, 48, 83);
     color: #7d39d0;
     font-family: 'Courier New', Courier, monospace;
     opacity: 1.1;
@@ -399,7 +399,7 @@
     font-size: 1em;
     grid-column: 3/3;
     grid-row: 2/2;
-
+    box-shadow: -1px 6px 79px 51px rgb(255, 60, 60);
     justify-self: center;
     align-self: start;
     opacity: 0.8;
@@ -549,6 +549,7 @@
     grid-row: 2/2;
     justify-self: center;
     align-self: start;
+    box-shadow: -1px 6px 79px 51px rgb(255, 60, 60);
 
 }
 
@@ -696,6 +697,60 @@
     -o-border-radius: 10px;
 }
 
+.image-ramdan1 {
+    width: 100%;
+    grid-row: 2/2;
+    grid-column: 3/3;
+    justify-self: center;
+    margin-bottom: 20px;
+    align-self: end;
+    background-image: url(./assets/image/islamic.png);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+
+}
+
+.image-ramdan2 {
+    width: 100%;
+    height: 100%;
+    grid-row: 2/2;
+    grid-column: 4/4;
+    justify-self: center;
+    margin-bottom: 20px;
+    align-self: end;
+    background-image: url(./assets/image/stars.png);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+
+}
+
+.image-ramdan3 {
+    width: 100%;
+    height: 100%;
+    grid-row: 2/2;
+    grid-column: 3/5;
+    justify-self: center;
+    align-self: start;
+    background-image: url(./assets/image/ramdan-kareem-text.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    box-shadow: inset 0px 0px 34px 26px rgb(255, 60, 60);
+}
+
 @media screen and (max-width:992px) {
     .container {
         display: grid;
@@ -833,6 +888,7 @@
         grid-row: 3/3;
         justify-self: end;
         align-self: center;
+        box-shadow: none;
     }
 
     .four-pointed-star5 {
@@ -873,6 +929,34 @@
 
     .four-pointed-star::before {
         display: none;
+    }
+
+    .image-ramdan1 {
+        grid-row: 7/9;
+        grid-column: 1/1;
+        justify-self: end;
+        align-self: center;
+    }
+
+    .image-ramdan2 {
+
+        grid-row: 7/9;
+        grid-column: 1/1;
+        justify-self: start;
+        align-self: center;
+    }
+
+    .image-ramdan3 {
+
+        grid-row: 7/9;
+        grid-column: 1/1;
+        justify-self: center;
+        align-self: center;
+        box-shadow: rgb(255, 60, 60) 0px 0px 20px 12px ;
+    }
+
+    .image-ramdan3:hover {
+        box-shadow: rgb(255, 60, 60) 0px 0px 20px 12px inset;
     }
 
     .attribution a {
