@@ -24,7 +24,7 @@
     margin-top: 100px;
     grid-area: grid-par;
     background-color: #00001a;
-    background-image: url(/assets/image/ramdan-careem.jpg);
+    background-image: url(./assets/image/ramdan-careem.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -719,6 +719,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-right: 30px;
     }
 
     .nav-info ul {
@@ -731,9 +732,7 @@
         -o-transition: .4s;
     }
 
-    .nav-info ul {
-        position: absolute;
-    }
+
 
     .nav-info {
         grid-area: nav-info;
