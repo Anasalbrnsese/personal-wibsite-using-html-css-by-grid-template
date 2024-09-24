@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    background-color: #49516e;
+    background-color: #090e21;
     box-sizing: border-box;
 }
 
@@ -670,7 +670,8 @@
 }
 
 .attribution {
-    color: brown;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-area: Anas;
     justify-self: center;
     align-self: center;
@@ -686,6 +687,8 @@
 
 .attribution a {
     text-decoration: none;
+    color: #7d39d0;
+    font-weight: 600;
 }
 
 .attribution:hover {
@@ -920,6 +923,8 @@
         justify-self: center;
         align-self: end;
         z-index: 1;
+        color: white;
+        font-family: 'Franklin Gothic Medium';
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -952,7 +957,7 @@
         grid-column: 1/1;
         justify-self: center;
         align-self: center;
-        box-shadow: rgb(255, 60, 60) 0px 0px 20px 12px ;
+        box-shadow: rgb(255, 60, 60) 0px 0px 20px 12px;
     }
 
     .image-ramdan3:hover {
